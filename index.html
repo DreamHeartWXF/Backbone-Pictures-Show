@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,width=device-width">
+	<style>
+		.list{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<!-- 定义容器元素 -->
+	<div id="app">
+		<section id="list" class="list">
+			<header>
+				<div class="go-back"><span class="arrow"><span class="arrow-green"></span></span></div>
+				<div class="login">登录</div>
+				<h1>个人相册</h1>
+			</header>
+			<div class="con">
+				<div class="search"><input type="text" placeholder = "搜索你想要的照片"><span>搜一搜</span></div>
+				<ul class="nav clearfix">
+					<li data-id="0">泰山</li>
+					<li data-id="1">平凉</li>
+					<li data-id="2">兰州</li>
+					<li data-id="3">郑州</li>
+					<li data-id="4">开封</li>
+					<li data-id="5">北京</li>
+				</ul>
+			</div>
+			
+			<div class="container">
+				<div class="left-container"></div>
+				<div class="right-container"></div>
+			</div>
+			<div class="go-top">返回顶部</div>
+		</section>
+		<!-- 定义大图页容器 -->
+		<section id="layer" class="layer">大图页</section>
+	</div>
+<script type="text/template" id="tpl_layer">
+	<div class="container" style="<%=style%>"><img src="<%=src%>" alt=""></div>
+	<header>
+		<div class="go-back"><span class="arrow"><span class="green-arrow"></span></span></div>
+		<h1><%=title%></h1>
+	</header>
+</script>
+<script src="js/sea.js"></script>
+<script src="js/lib/seajs-css.js"></script>
+<script src="js/lib/zepto.js"></script>
+<script src="js/lib/zepto.touch.js"></script>
+<script src="js/lib/underscore.js"></script>
+<script src="js/lib/backbone.js"></script>
+<script>
+	//引入入口文件
+	seajs.use('app');
+</script>
+</body>
+</html>
