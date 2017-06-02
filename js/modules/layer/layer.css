@@ -1,0 +1,52 @@
+.layer .container {
+	background: #000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+}
+.layer .container img {
+	max-width: 100%;
+	max-height: 100%;
+	vertical-align: middle;
+}
+.layer header {
+	height: 60px;
+	line-height: 60px;
+	background: #000;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	/*display: none;*/
+	position: fixed;
+}
+.layer .go-back {
+	float: left;
+	position: relative;
+}
+.layer .go-back span {
+	position: absolute;
+	border: 16px solid transparent;
+	border-right: 16px solid #fff;
+	left: -8px;
+	top: 13px;
+}
+.layer .go-back .green-arrow {
+	border-right-color: #000;
+	top: -16px;
+	left: -11px;
+}
+.layer header h1 {
+	text-align: center;
+	font-size: 25px;
+	text-indent: 40px;
+    height: 50px;
+    margin-right: 50px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
